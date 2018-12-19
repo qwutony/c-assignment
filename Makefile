@@ -9,11 +9,11 @@ TARGETS = $(patsubst %, build/%, $(EXECUTABLES))
 # this rule is run when typing `make` by itself
 all: $(TARGETS)
 	@# make sure build directory exists
-	@mkdir -p build
 # eventually our `all` rule will look like this:
 #all: hexdump keylogger passcheck
 # anything in the build directory depends on the corresponding .c file
 build/%: %.c
+	@mkdir -p build
 	gcc -g -o $@ $<
 # deletes executables (`make clean`)
 clean:
