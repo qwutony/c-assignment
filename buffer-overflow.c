@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[]) {
     
     // open a file (store file handle in target_file)
-    FILE *target_file = fopen("hexdump.c", "r");
+    FILE *target_file = fopen("buffer-overflow.c", "r");
 
     // create somewhere to store file contents
     char buffer[24];
