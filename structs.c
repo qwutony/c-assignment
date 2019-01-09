@@ -3,7 +3,7 @@
 
 // structs are user-defined types (UDTs)
 // this can be later be used as a type of a variable
-// structs group a collection of variables which may have different types
+// structs group a collection of variables which may have different types   
 
 // structs can be nested
 
