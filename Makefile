@@ -2,7 +2,7 @@
 # eventually this will look like:
 #EXECUTABLES = hexdump keylogger passcheck
 # but for now it's empty
-EXECUTABLES = strings hexdump buffer-overflow structs keylogger malloc
+EXECUTABLES = strings hexdump buffer-overflow structs keylogger malloc password
 # put all executables in `build` directory
 TARGETS = $(patsubst %, build/%, $(EXECUTABLES))
 # default make rule
@@ -15,7 +15,7 @@ all: $(TARGETS)
 build/%: %.c
 	@# make sure build directory exists	
 	@mkdir -p build
-	gcc -g -o $@ $<
+	gcc -g -o $@ $<  password_check.c
 # deletes executables (`make clean`)
 clean:
 	rm -r build
