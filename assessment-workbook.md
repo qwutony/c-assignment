@@ -40,3 +40,6 @@ Waterfall on the other hand is a relatively linear design approach. In software 
 
 7. Outline the development of the C language, making reference to the types of software C is intended for.
 
+The development of C is closely tied to the Unix operating system PDP-11, and was created by Dennis Ritchie. The operating system was originally written in assembly, but attempts were made to write in B, which was a simplified version of BCPL. The flaws of B were addressed through the creation of C. The initial development of C eventually led to the rewriting of a large part of the Unix system, during a time where most OS were running on assembly. Over the 1970s and 1980s, many different versions of C were implemented in a variety of computers, which drove the neccessity to standardize the programming language. This first began through ANSI (American National Standards Institute) and ISO. Three more modern revisions to the language happened in 1999 (C99), C11 (2011) and C18 (2018).
+
+C is initially intended for the development and writing of system software, but has developed to be a general purpose programming language, mainly for developing firmware and other portable applications.
