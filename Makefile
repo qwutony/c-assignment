@@ -2,7 +2,7 @@
 # eventually this will look like:
 #EXECUTABLES = hexdump keylogger passcheck
 # but for now it's empty
-EXECUTABLES = strings hexdump buffer-overflow structs keylogger malloc password
+EXECUTABLES = strings hexdump buffer-overflow structs keylogger malloc password obs-2
 # put all executables in `build` directory
 TARGETS = $(patsubst %, build/%, $(EXECUTABLES))
 # default make rule
